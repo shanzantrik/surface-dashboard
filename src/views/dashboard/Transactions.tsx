@@ -59,8 +59,8 @@ const data: DataType[] = [
   },
 {
     stats: '68',
-    color: 'info',
-    title: 'warning',
+    color: 'error',
+    title: 'Warnings',
     icon: 'ri-money-dollar-circle-line'
   },
 {

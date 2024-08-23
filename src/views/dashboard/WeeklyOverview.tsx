@@ -90,7 +90,7 @@ const WeeklyOverview = () => {
   return (
     <Card>
       <CardHeader
-        title='Weekly Overview'
+        title='Weekly Vulnerability Overview'
         action={<OptionsMenu iconClassName='text-textPrimary' options={['Refresh', 'Update', 'Delete']} />}
       />
       <CardContent sx={{ '& .apexcharts-xcrosshairs.apexcharts-active': { opacity: 0 } }}>
@@ -98,15 +98,15 @@ const WeeklyOverview = () => {
           type='bar'
           height={206}
           width='100%'
-          series={[{ name: 'Sales', data: [37, 57, 45, 75, 57, 40, 65] }]}
+          series={[{ name: 'Vulnerabilities', data: [37, 57, 45, 75, 57, 40, 65] }]}
           options={options}
         />
         <div className='flex items-center mbe-4 gap-4'>
           <Typography variant='h4'>45%</Typography>
-          <Typography>Your sales performance is 45% 😎 better compared to last month</Typography>
+          <Typography>Your Vulnerability have increased 45% as compared to last month</Typography>
         </div>
         <Button fullWidth variant='contained'>
-          Details
+          Details...
         </Button>
       </CardContent>
     </Card>

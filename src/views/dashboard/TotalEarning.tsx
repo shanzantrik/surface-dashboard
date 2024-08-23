@@ -25,26 +25,35 @@ type DataType = {
 // Vars
 const data: DataType[] = [
   {
-    progress: 75,
-    title: 'Zipcar',
-    amount: '$24,895.65',
-    subtitle: 'Vuejs, React & HTML',
+    progress: 45,
+    color: 'error',
+    title: 'Wordpress Websites',
+    amount: '48',
+    subtitle: 'PHP, Mysql, reactjs',
     imgSrc: '/images/cards/zipcar.png'
   },
   {
-    progress: 50,
-    color: 'info',
-    title: 'Bitbank',
-    amount: '$8,650.20',
-    subtitle: 'Sketch, Figma & XD',
+    progress: 28,
+    color: 'error',
+    title: 'API Endpoints',
+    amount: '28',
+    subtitle: 'Nodejs, Expressjs, Mongodb',
     imgSrc: '/images/cards/bitbank.png'
   },
   {
     progress: 20,
-    title: 'Aviato',
-    color: 'secondary',
-    amount: '$1,245.80',
-    subtitle: 'HTML & Angular',
+    title: 'Salesforce',
+    color: 'error',
+    amount: '20',
+    subtitle: 'Salesforce Cloud, Apex',
+    imgSrc: '/images/cards/aviato.png'
+  },
+  {
+    progress: 20,
+    title: 'SAP',
+    color: 'error',
+    amount: '20',
+    subtitle: 'ABAP, BASIS, CSHARP',
     imgSrc: '/images/cards/aviato.png'
   }
 ]
@@ -53,19 +62,16 @@ const TotalEarning = () => {
   return (
     <Card>
       <CardHeader
-        title='Total Earning'
+        title='Top Applications'
         action={<OptionMenu iconClassName='text-textPrimary' options={['Last 28 Days', 'Last Month', 'Last Year']} />}
       ></CardHeader>
       <CardContent className='flex flex-col gap-11 md:mbs-2.5'>
         <div>
           <div className='flex items-center'>
-            <Typography variant='h3'>$24,895</Typography>
-            <i className='ri-arrow-up-s-line align-bottom text-success'></i>
-            <Typography component='span' color='success.main'>
-              10%
+            <Typography component='span' color='error.main'>
+              Applications with Vulnerabilities
             </Typography>
           </div>
-          <Typography>Compared to $84,325 last year</Typography>
         </div>
         <div className='flex flex-col gap-6'>
           {data.map((item, index) => (
