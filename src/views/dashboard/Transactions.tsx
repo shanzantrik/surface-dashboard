@@ -22,27 +22,51 @@ type DataType = {
 // Vars
 const data: DataType[] = [
   {
-    stats: '245k',
-    title: 'Sales',
+    stats: '25',
+    title: 'Domains',
     color: 'primary',
     icon: 'ri-pie-chart-2-line'
   },
   {
-    stats: '12.5k',
-    title: 'Users',
+    stats: '30',
+    title: 'Sub Domains',
     color: 'success',
     icon: 'ri-group-line'
   },
   {
-    stats: '1.54k',
+    stats: '15',
     color: 'warning',
-    title: 'Products',
+    title: 'Services',
     icon: 'ri-macbook-line'
   },
   {
-    stats: '$88k',
+    stats: '15',
     color: 'info',
-    title: 'Revenue',
+    title: 'Applications',
+    icon: 'ri-money-dollar-circle-line'
+  },
+  {
+    stats: '25',
+    color: 'info',
+    title: 'Certificates',
+    icon: 'ri-award-fill'
+  },
+  {
+    stats: '9',
+    color: 'warning',
+    title: 'APIs',
+    icon: 'ri-error-warning-fill'
+  },
+{
+    stats: '68',
+    color: 'info',
+    title: 'warning',
+    icon: 'ri-money-dollar-circle-line'
+  },
+{
+    stats: '30',
+    color: 'info',
+    title: 'IP Addresses',
     icon: 'ri-money-dollar-circle-line'
   }
 ]
@@ -51,12 +75,12 @@ const Transactions = () => {
   return (
     <Card className='bs-full'>
       <CardHeader
-        title='Transactions'
-        action={<OptionMenu iconClassName='text-textPrimary' options={['Refresh', 'Share', 'Update']} />}
+        title='Inventory Summary'
+        action={<OptionMenu iconClassName='text-textPrimary' options={['Last 28 Days', 'Last Month', 'Last Year']} />}
         subheader={
           <p className='mbs-3'>
-            <span className='font-medium text-textPrimary'>Total 48.5% Growth 😎</span>
-            <span className='text-textSecondary'>this month</span>
+            <span className='font-medium text-textPrimary'> 48.5% Growth in Vulnerbailities 👾 </span>
+            <span className='text-textSecondary'>from last scan on June 15th, 2024</span>
           </p>
         }
       />

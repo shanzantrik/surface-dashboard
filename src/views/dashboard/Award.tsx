@@ -9,21 +9,22 @@ const Award = () => {
     <Card>
       <CardContent className='flex flex-col gap-2 relative items-start'>
         <div>
-          <Typography variant='h5'>Congratulations John! 🎉</Typography>
-          <Typography>Best seller of the month</Typography>
+          <Typography variant='h5'>Most Critical Vulnerability 👾</Typography>
+          <Typography>Across all Inventory Assets</Typography>
         </div>
         <div>
           <Typography variant='h4' color='primary'>
-            $42.8k
+            Domain: www.abc.com
           </Typography>
-          <Typography>78% of target 🚀</Typography>
+          <Typography>SSL Certificate Expired on 2024-05-01 🚀</Typography>
+          <Typography>Get a detailed report on domains SSL <br/> certificate expiry.</Typography>
         </div>
         <Button size='small' variant='contained'>
-          View Sales
+          View Details...
         </Button>
         <img
-          src='/images/pages/trophy.png'
-          alt='trophy image'
+          src='/images/pages/ssl-certificate.png'
+          alt='ssl-certificate image'
           height={102}
           className='absolute inline-end-7 bottom-6'
         />
